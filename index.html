@@ -1,4 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FirstStep – Your Guide to Getting Your First Job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">FirstStep</a>
+    <nav class="header-nav" aria-label="Main">
+      <a href="soft-skills.html">Soft Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="interview.html">Interview</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="ic-open" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      <svg class="ic-close" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menu">
+    <p class="mobile-menu-label">Menu</p>
+    <a href="soft-skills.html">Soft Skills</a>
+    <a href="resume.html">Resume</a>
+    <a href="interview.html">Interview</a>
+  </nav>
+
+  <main class="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-media" role="img" aria-label="Illustration of a designer working at a laptop"></div>
+      <h1 class="hero-title">Your guide to getting your first job.</h1>
+      <p class="hero-text">Starting your first job can feel overwhelming. FirstStep gives you simple guides and practical tips to help you prepare, apply, interview, and begin your career with confidence.</p>
+    </section>
+
+    <!-- FirstStep Manual -->
+    <section class="manual">
+      <h2>FirstStep Manual</h2>
+      <p>Getting your first job doesn't happen in one step. Follow the FirstStep Manual and learn what to do at each stage.</p>
+    </section>
+
+    <!-- Guide cards -->
+    <section class="guides" id="guides">
+      <h2>Where do you want to start?</h2>
+      <p>Choose a guide and take your next step toward your first job.</p>
+
+      <div class="cards">
+        <a class="card" href="soft-skills.html">
+          <img class="card-icon" src="img/creative-mind.svg" alt="" width="56" height="67">
+          <h3>Build Your Soft Skills</h3>
+          <p><span class="v-dp">Discover the technical and personal skills that can help you become a stronger candidate for your first job.</span><span class="v-t">Discover the technical and personal skills that can help you become a stronger candidate.</span></p>
+          <span class="card-link">Read Guide <img src="img/arrow-up.svg" alt="" width="29" height="32"></span>
+        </a>
+
+        <a class="card" href="resume.html">
+          <img class="card-icon" src="img/curriculum-vitae.svg" alt="" width="46" height="50">
+          <h3>Build Your Resume</h3>
+          <p><span class="v-d">Learn what to include in your first resume and how to present your skills.</span><span class="v-t">Learn what to include in your first resume and how to present your skills effectively.</span><span class="v-p">Learn what to include in your first resume and how to present your skills even with limited experience.</span></p>
+          <span class="card-link">Read Guide <img src="img/arrow-up.svg" alt="" width="29" height="32"></span>
+        </a>
+
+        <a class="card" href="interview.html">
+          <img class="card-icon" src="img/job-interview.svg" alt="" width="45" height="55">
+          <h3>Prepare for Interviews</h3>
+          <p><span class="v-d">Get familiar with common interview questions and learn how to prepare.</span><span class="v-t">Get familiar with common interview questions and learn how to prepare answers.</span><span class="v-p">Get familiar with common interview questions and learn how to prepare effectively.</span></p>
+          <span class="card-link">Read Guide <img src="img/arrow-up.svg" alt="" width="29" height="32"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Tip -->
+    <section class="tip">
+      <div class="tip-body">
+        <h2>FIRSTSTEP TIP</h2>
+        <p>You don't need to know everything before applying for your first job. Entry-level jobs are opportunities to learn. Focus on showing your skills, willingness to learn, and ability to work with others.</p>
+      </div>
+      <img class="tip-image" src="img/person.jpg" alt="">
+    </section>
+  </main>
+
+  <!-- Footer (desktop) -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <p class="footer-logo">FirstStep</p>
+      <p class="footer-tagline">Your Guide to Getting Your First Job</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="" width="63" height="63"></a>
+        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="" width="66" height="57"></a>
+      </div>
+      <p class="footer-copy">© 2026 FirstStep</p>
+    </div>
+
+    <div class="footer-nav">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="soft-skills.html">Skills</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="interview.html">Interview</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <footer class="footer-m">
+    <div class="fm-row">
+      <div class="fm-brand">
+        <p class="fm-logo">FirstStep</p>
+        <p class="fm-tag">Your Guide to Getting Your First Job</p>
+      </div>
+      <div class="fm-nav">
+        <p class="fm-nav-label">Navigation</p>
+        <nav aria-label="Footer">
+          <a href="soft-skills.html"><span class="v-t">Skills</span><span class="v-p">Soft Skills</span></a>
+          <a href="resume.html">Resume</a>
+          <a href="interview.html">Interview</a>
+        </nav>
+      </div>
+      <div class="fm-social">
+        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
+        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
+      </div>
+    </div>
+    <hr class="fm-line">
+    <p class="fm-copy">© 2026 FirstStep</p>
+  </footer>
+
+</body>
 </html>
