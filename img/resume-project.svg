@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="43" viewBox="0 0 47 43">
+<rect x="3" y="2" width="38" height="37" rx="3" fill="#ffffff" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="3" y="2" width="38" height="9" rx="3" fill="#4a7dff" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g fill="#ffffff"><circle cx="8" cy="6.5" r="1.4"/><circle cx="13" cy="6.5" r="1.4"/></g>
+<rect x="8" y="15" width="14" height="12" rx="2" fill="#87cefa" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="9.5,25 14,19 17,23 19,21 21,25" fill="#3ecf8e"/>
+<g stroke="#1d2340" stroke-width="2" stroke-linecap="round"><line x1="26" y1="17" x2="36" y2="17"/><line x1="26" y1="23" x2="36" y2="23"/><line x1="8" y1="32" x2="36" y2="32"/></g>
+<circle cx="38" cy="33" r="7" fill="#ff8a3d" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="34.5,33 37,35.5 41.5,30.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>

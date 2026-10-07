@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="49" viewBox="0 0 55 49">
+<g transform="rotate(45 27.5 24.5)">
+  <rect x="22" y="1" width="11" height="45" rx="2" fill="#87cefa" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <g stroke="#1d2340" stroke-width="1.6" stroke-linecap="round"><line x1="22" y1="9" x2="27" y2="9"/><line x1="22" y1="16" x2="26" y2="16"/><line x1="22" y1="23" x2="27" y2="23"/><line x1="22" y1="30" x2="26" y2="30"/><line x1="22" y1="37" x2="27" y2="37"/></g>
+</g>
+<g transform="rotate(-45 27.5 24.5)">
+  <rect x="22" y="1" width="11" height="8" rx="2" fill="#ff7aa2" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="22" y="9" width="11" height="31" fill="#ffc233" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="22,40 33,40 27.5,48" fill="#ffd1a6" stroke="#1d2340" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <polygon points="25.5,44.8 29.5,44.8 27.5,48" fill="#1d2340"/>
+</g></svg>
