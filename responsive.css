@@ -602,3 +602,115 @@
   .dodont li { margin-bottom: 4px; }
   .quote { order: 4; grid-column: auto; margin-top: 16px; padding: 24px; border-radius: 28px; font-size: 18px; line-height: 26px; }
 }
+
+/* =========================================================
+   HOVER + CLICK (pressed) STATES
+   ========================================================= */
+
+/* Smooth transitions */
+a, button, .card, .card-link, .pill, .grad-card, .rs-step,
+.fm-social img, .footer-social img, .header-nav a, .logo {
+  transition: transform .18s ease, box-shadow .18s ease,
+              background-color .18s ease, color .18s ease, opacity .18s ease;
+}
+
+/* Replace the old "fade everything" hover */
+a:hover { opacity: 1; }
+
+/* Keyboard focus */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* ---- Hover (mouse devices only) ---- */
+@media (hover: hover) {
+
+  /* Logo */
+  .logo:hover { color: #2f64f0; transform: scale(1.03); }
+
+  /* Header nav: underline slides in */
+  .header-nav a { position: relative; }
+  .header-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .2s ease;
+  }
+  .header-nav a:hover::after,
+  .header-nav a[aria-current="page"]::after { transform: scaleX(1); }
+  .header-nav a:hover { opacity: 1; color: var(--blue); }
+
+  /* Home cards (whole card is the link) */
+  a.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(23, 35, 60, .32);
+    background: #1d2d4d;
+  }
+  a.card:hover .card-link img { transform: rotate(89.49deg) translateY(-4px); }
+  a.card:hover .card-link { color: #fff; }
+
+  /* Pills */
+  .pill:hover {
+    background: #2f64f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(74, 125, 255, .35);
+  }
+
+  /* Gradient cards, practice items and resume steps */
+  .grad-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(23, 35, 60, .15);
+  }
+  .rs-step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(23, 35, 60, .25);
+  }
+
+  /* Footer links and social icons */
+  .footer-nav a:hover,
+  .fm-nav nav a:hover { color: var(--sky); }
+  .footer-social a:hover img,
+  .fm-social a:hover img { transform: translateY(-3px) scale(1.1); }
+
+  /* Phone menu links */
+  .mobile-menu a:hover { color: var(--blue); }
+}
+
+/* ---- Click / tap (pressed) ---- */
+.logo:active { transform: scale(.97); }
+.header-nav a:active { color: #2f64f0; }
+
+a.card:active {
+  transform: translateY(-1px) scale(.98);
+  box-shadow: 0 4px 10px rgba(23, 35, 60, .3);
+  background: #142038;
+}
+a.card:active .card-link img { transform: rotate(89.49deg) translateY(0); }
+
+.pill:active {
+  transform: translateY(0) scale(.97);
+  box-shadow: none;
+  background: #1f4fd6;
+}
+
+.grad-card:active, .rs-step:active { transform: scale(.985); box-shadow: none; }
+
+.footer-social a:active img,
+.fm-social a:active img { transform: scale(.92); }
+
+.menu-toggle:active { transform: scale(.88); }
+.mobile-menu a:active { color: var(--blue); transform: translateX(4px); }
+.card-link:active { opacity: .85; }
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+  a:hover, a:active, .card:hover, .grad-card:hover, .rs-step:hover { transform: none !important; }
+}
