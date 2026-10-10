@@ -4,130 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Interview – FirstStep</title>
+  <meta name="description" content="Common interview questions plus simple Do's and Don'ts to help you prepare.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <script>try{var t=localStorage.getItem('theme');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css">
-  <link rel="stylesheet" href="responsive.css">
-  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="index.html">FirstStep</a>
-    <nav class="header-nav" aria-label="Main">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+      <nav class="header-nav" aria-label="Main">
+      <a href="index.html">Home</a>
       <a href="soft-skills.html">Soft Skills</a>
       <a href="resume.html">Resume</a>
       <a href="interview.html" aria-current="page">Interview</a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="ic-open" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-      <svg class="ic-close" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="ic-open" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <svg class="ic-close" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Menu">
     <p class="mobile-menu-label">Menu</p>
-    <a href="soft-skills.html">Soft Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="interview.html" aria-current="page">Interview</a>
-  </nav>
-
-  <main class="page page-iv">
-    <div class="iv-layout">
-
-      <div class="iv-left">
-        <div class="iv-hero">
-          <a class="pill" href="interview.html">Prepare for an Interview</a>
-          <div class="iv-body">
-            <h1 class="lead-title">Walk Into Your Interview Prepared</h1>
-            <p class="lead-text">An interview is a chance for you and the employer to learn more about each other. Preparation can help you communicate clearly and feel more confident.</p>
-          </div>
-          <img class="iv-art" src="img/interview.png" alt="">
-        </div>
-
-        <section class="dodont">
-          <div class="do">
-            <h2>Do</h2>
-            <ul>
-              <li>Research the company.</li>
-              <li>Arrive prepared.</li>
-              <li>Listen carefully.</li>
-              <li>Speak clearly.</li>
-              <li>Be honest.</li>
-              <li>Ask thoughtful questions.</li>
-              <li class="h-t">Thank the interviewer.</li>
-            </ul>
-          </div>
-          <div class="dont">
-            <h2>Don’t</h2>
-            <ul>
-              <li>Arrive unprepared.</li>
-              <li>Interrupt the interviewer.</li>
-              <li><span class="v-dp">Pretend to know something you don't.</span><span class="v-t">Pretend to know something.</span></li>
-              <li><span class="v-dp">Memorize every answer word-for-word.</span><span class="v-t">Memorize answers word-for-word.</span></li>
-              <li><span class="v-dp">Speak negatively about previous experiences.</span><span class="v-t">Speak negatively about past roles.</span></li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
-      <div class="iv-right">
-        <section class="iv-qs">
-          <h2>Common Interview Questions</h2>
-          <div class="card-stack">
-            <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Tell me about yourself.<span class="qm">"</span></p><p class="gc-d"><span class="v-dp">Give a short introduction about your education, relevant experience, skills, and career interests.</span><span class="v-t">Give a short introduction about your education, experience, and career interests. Tip: Keep your answer related to the position.</span></p><p class="gc-d h-t">Tip: Keep your answer focused on information related to the position.</p></div>
-            <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Why are you interested in this position?<span class="qm">"</span></p><p class="gc-d">Explain what interests you about the role and how it connects with your skills or goals.</p></div>
-            <div class="grad-card"><p class="gc-t"><span class="qm">"</span>What are your strengths?<span class="qm">"</span></p><p class="gc-d">Choose strengths that are relevant to the job and support your answer with a simple example.</p></div>
-            <div class="grad-card"><p class="gc-t"><span class="qm">"</span>What is something you want to improve?<span class="qm">"</span></p><p class="gc-d">Choose an area you are genuinely working on and explain how you are improving it.</p></div>
-            <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Why should we hire you?<span class="qm">"</span></p><p class="gc-d">Talk about the skills, attitude, and willingness to learn that you can bring to the position.</p></div>
-          </div>
-        </section>
-
-        <blockquote class="quote">“Confidence comes from preparation. You don’t need to be perfect, just be yourself.”</blockquote>
-      </div>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-brand">
-      <strong>FirstStep</strong>
-      Your Guide To Getting Your First job
-    </div>
-    <div class="footer-mid">
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
-      </div>
-      <p class="footer-copy">© 2026 FirstStep</p>
-    </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="soft-skills.html">Skills</a>
+    <a href="index.html">Home</a>
+      <a href="soft-skills.html">Soft Skills</a>
       <a href="resume.html">Resume</a>
       <a href="interview.html" aria-current="page">Interview</a>
-    </nav>
-  </footer>
+  </nav>
 
-  <footer class="footer-m">
-    <div class="fm-row">
-      <div class="fm-brand">
-        <p class="fm-logo">FirstStep</p>
-        <p class="fm-tag">Your Guide to Getting Your First Job</p>
+  <main class="container page">
+    <section class="page-head">
+      <div class="ph-text">
+        <p class="eyebrow">Prepare for an Interview</p>
+        <h1>Walk Into Your Interview Prepared</h1>
+        <p class="lead">An interview is a chance for you and the employer to learn more about each other. Preparation can help you communicate clearly and feel more confident.</p>
       </div>
-      <div class="fm-nav">
-        <p class="fm-nav-label">Navigation</p>
-        <nav aria-label="Footer">
-          <a href="soft-skills.html"><span class="v-t">Skills</span><span class="v-p">Soft Skills</span></a>
-          <a href="resume.html">Resume</a>
-          <a href="interview.html">Interview</a>
+      <img class="ph-art wide" src="img/interview.png" alt="" width="380" height="253">
+    </section>
+
+    <section class="dodont">
+      <div class="do">
+        <h2>Do</h2>
+        <ul>
+            <li>Research the company.</li>
+            <li>Arrive prepared.</li>
+            <li>Listen carefully.</li>
+            <li>Speak clearly.</li>
+            <li>Be honest.</li>
+            <li>Ask thoughtful questions.</li>
+            <li>Thank the interviewer.</li>
+        </ul>
+      </div>
+      <div class="dont">
+        <h2>Don’t</h2>
+        <ul>
+            <li>Arrive unprepared.</li>
+            <li>Interrupt the interviewer.</li>
+            <li>Pretend to know something you don't.</li>
+            <li>Memorize every answer word-for-word.</li>
+            <li>Speak negatively about previous experiences.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="iv-qs">
+      <h2>Common Interview Questions</h2>
+      <dl class="def-list cols">
+          <div><dt>“Tell me about yourself.”</dt><dd>Give a short introduction about your education, relevant experience, skills, and career interests.<span class="tip-line">Tip: Keep your answer focused on information related to the position.</span></dd></div>
+          <div><dt>“Why are you interested in this position?”</dt><dd>Explain what interests you about the role and how it connects with your skills or goals.</dd></div>
+          <div><dt>“What are your strengths?”</dt><dd>Choose strengths that are relevant to the job and support your answer with a simple example.</dd></div>
+          <div><dt>“What is something you want to improve?”</dt><dd>Choose an area you are genuinely working on and explain how you are improving it.</dd></div>
+          <div><dt>“Why should we hire you?”</dt><dd>Talk about the skills, attitude, and willingness to learn that you can bring to the position.</dd></div>
+      </dl>
+    </section>
+
+    <blockquote class="quote">“Confidence comes from preparation. You don’t need to be perfect, just be yourself.”</blockquote>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+          <p>Your guide to getting your first job.</p>
+        </div>
+        <nav class="f-col" aria-label="Footer">
+          <h2>Navigation</h2>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="soft-skills.html">Soft Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="interview.html">Interview</a></li>
+          </ul>
         </nav>
+        <div class="f-col">
+          <h2>Follow us</h2>
+          <div class="f-social">
+            <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="" width="36" height="36"></a>
+            <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="" width="36" height="36"></a>
+          </div>
+        </div>
       </div>
-      <div class="fm-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
+      <div class="footer-bottom">
+        <p>© 2026 FirstStep</p>
+        <p>Made for first-time job seekers.</p>
       </div>
     </div>
-    <hr class="fm-line">
-    <p class="fm-copy">© 2026 FirstStep</p>
   </footer>
 
 </body>

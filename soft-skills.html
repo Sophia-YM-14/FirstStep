@@ -4,120 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Soft Skills – FirstStep</title>
+  <meta name="description" content="Learn which soft skills employers value and where you can practice them.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <script>try{var t=localStorage.getItem('theme');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css">
-  <link rel="stylesheet" href="responsive.css">
-  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="index.html">FirstStep</a>
-    <nav class="header-nav" aria-label="Main">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+      <nav class="header-nav" aria-label="Main">
+      <a href="index.html">Home</a>
       <a href="soft-skills.html" aria-current="page">Soft Skills</a>
       <a href="resume.html">Resume</a>
       <a href="interview.html">Interview</a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="ic-open" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-      <svg class="ic-close" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="ic-open" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <svg class="ic-close" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Menu">
     <p class="mobile-menu-label">Menu</p>
-    <a href="soft-skills.html" aria-current="page">Soft Skills</a>
-    <a href="resume.html">Resume</a>
-    <a href="interview.html">Interview</a>
+    <a href="index.html">Home</a>
+      <a href="soft-skills.html" aria-current="page">Soft Skills</a>
+      <a href="resume.html">Resume</a>
+      <a href="interview.html">Interview</a>
   </nav>
 
-  <main class="page page-ss">
-    <div class="ss-layout">
-
-      <div class="ss-left">
-        <div class="ss-top">
-          <a class="pill" href="soft-skills.html">Develop Your Soft Skills</a>
-          <div class="ss-body">
-            <h1 class="lead-title">Strengthen Your Soft Skills</h1>
-            <p class="lead-text">Soft skills are personal qualities that help you work well with others. Employers value communication, teamwork, and problem-solving just as much as technical abilities.</p>
-          </div>
-          <img class="ss-art" src="img/soft-skills.jpg" alt="">
-        </div>
-
-        <section class="practice">
-          <h2><span class="v-d">Where Can You Practice Soft Skill?</span><span class="v-t">Where Can You Practice?</span></h2>
-
-          <div class="practice-item school">
-            <img src="img/school.svg" alt="" width="79" height="81">
-            <p><b>At School</b><span class="pi-d"><span class="v-d">Group projects can help you practice communication, teamwork, responsibility, and time management.</span><span class="v-t">Group projects can help you practice communication, teamwork, and time management.</span></span></p>
-          </div>
-
-          <div class="practice-item org">
-            <img src="img/hierarchy.svg" alt="" width="89" height="91">
-            <p><b>In Organizations</b><span class="pi-d"><span class="v-d">Joining school organizations can help you develop leadership, communication, and collaboration skills.</span><span class="v-t">Joining school clubs or volunteer networks helps build leadership and active collaboration.</span></span></p>
-          </div>
-
-          <div class="practice-item proj">
-            <img src="img/softskills-project.svg" alt="" width="81" height="74">
-            <p><b>Through Projects</b><span class="pi-d"><span class="v-d">Personal and academic projects can help you practice problem-solving, organization, and adaptability.</span><span class="v-t">Personal and academic milestones push you to refine problem-solving and self-adaptability.</span></span></p>
-          </div>
-        </section>
+  <main class="container page">
+    <section class="page-head">
+      <div class="ph-text">
+        <p class="eyebrow">Develop Your Soft Skills</p>
+        <h1>Strengthen Your Soft Skills</h1>
+        <p class="lead">Soft skills are personal qualities that help you work well with others. Employers value communication, teamwork, and problem-solving just as much as technical abilities.</p>
       </div>
+      <img class="ph-art" src="img/soft-skills.jpg" alt="" width="280" height="280">
+    </section>
 
+    <div class="two-col">
       <section class="key-skills">
         <h2>Key Soft Skills</h2>
-        <div class="card-stack">
-          <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Communication<span class="qm">"</span></p><p class="gc-d">Clearly express your ideas and listen actively to understand others.</p></div>
-          <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Teamwork<span class="qm">"</span></p><p class="gc-d">Collaborate with others, share responsibilities, and support your team.</p></div>
-          <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Problem Solving<span class="qm">"</span></p><p class="gc-d">Identify challenges and think through practical solutions step by step.</p></div>
-          <div class="grad-card"><p class="gc-t"><span class="qm">"</span>Time Management<span class="qm">"</span></p><p class="gc-d">Prioritize your tasks and meet deadlines without feeling overwhelmed.</p></div>
-          <div class="grad-card soft"><p class="gc-t"><span class="qm">"</span>Adaptability<span class="qm">"</span></p><p class="gc-d">Stay flexible and open to change when plans or situations shift.</p></div>
-        </div>
+        <dl class="def-list">
+          <div><dt>Communication</dt><dd>Clearly express your ideas and listen actively to understand others.</dd></div>
+          <div><dt>Teamwork</dt><dd>Collaborate with others, share responsibilities, and support your team.</dd></div>
+          <div><dt>Problem Solving</dt><dd>Identify challenges and think through practical solutions step by step.</dd></div>
+          <div><dt>Time Management</dt><dd>Prioritize your tasks and meet deadlines without feeling overwhelmed.</dd></div>
+          <div><dt>Adaptability</dt><dd>Stay flexible and open to change when plans or situations shift.</dd></div>
+        </dl>
       </section>
 
+      <section class="panel panel-purple">
+        <h2>Where Can You Practice Soft Skills?</h2>
+        <ul class="practice-list">
+          <li><img src="img/school.svg" alt=""><div><h3>At School</h3><p>Group projects can help you practice communication, teamwork, responsibility, and time management.</p></div></li>
+          <li><img src="img/hierarchy.svg" alt=""><div><h3>In Organizations</h3><p>Joining school organizations can help you develop leadership, communication, and collaboration skills.</p></div></li>
+          <li><img src="img/softskills-project.svg" alt=""><div><h3>Through Projects</h3><p>Personal and academic projects can help you practice problem-solving, organization, and adaptability.</p></div></li>
+        </ul>
+      </section>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="footer-brand">
-      <strong>FirstStep</strong>
-      Your Guide To Getting Your First job
-    </div>
-    <div class="footer-mid">
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
-      </div>
-      <p class="footer-copy">© 2026 FirstStep</p>
-    </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="soft-skills.html" aria-current="page">Skills</a>
-      <a href="resume.html">Resume</a>
-      <a href="interview.html">Interview</a>
-    </nav>
-  </footer>
-
-  <footer class="footer-m">
-    <div class="fm-row">
-      <div class="fm-brand">
-        <p class="fm-logo">FirstStep</p>
-        <p class="fm-tag">Your Guide to Getting Your First Job</p>
-      </div>
-      <div class="fm-nav">
-        <p class="fm-nav-label">Navigation</p>
-        <nav aria-label="Footer">
-          <a href="soft-skills.html"><span class="v-t">Skills</span><span class="v-p">Soft Skills</span></a>
-          <a href="resume.html">Resume</a>
-          <a href="interview.html">Interview</a>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+          <p>Your guide to getting your first job.</p>
+        </div>
+        <nav class="f-col" aria-label="Footer">
+          <h2>Navigation</h2>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="soft-skills.html">Soft Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="interview.html">Interview</a></li>
+          </ul>
         </nav>
+        <div class="f-col">
+          <h2>Follow us</h2>
+          <div class="f-social">
+            <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="" width="36" height="36"></a>
+            <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="" width="36" height="36"></a>
+          </div>
+        </div>
       </div>
-      <div class="fm-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
+      <div class="footer-bottom">
+        <p>© 2026 FirstStep</p>
+        <p>Made for first-time job seekers.</p>
       </div>
     </div>
-    <hr class="fm-line">
-    <p class="fm-copy">© 2026 FirstStep</p>
   </footer>
 
 </body>

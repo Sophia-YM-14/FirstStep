@@ -4,140 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume – FirstStep</title>
+  <meta name="description" content="What to include in your first resume, even with little or no work experience.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <script>try{var t=localStorage.getItem('theme');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='dark';if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="pages.css">
-  <link rel="stylesheet" href="responsive.css">
-  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="index.html">FirstStep</a>
-    <nav class="header-nav" aria-label="Main">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+      <nav class="header-nav" aria-label="Main">
+      <a href="index.html">Home</a>
       <a href="soft-skills.html">Soft Skills</a>
       <a href="resume.html" aria-current="page">Resume</a>
       <a href="interview.html">Interview</a>
-    </nav>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="ic-open" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-      <svg class="ic-close" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7L7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="ic-open" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M6 10h20M6 16h20M6 22h20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <svg class="ic-close" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><circle cx="16" cy="16" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.8 12.8l6.4 6.4M19.2 12.8l-6.4 6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Menu">
     <p class="mobile-menu-label">Menu</p>
-    <a href="soft-skills.html">Soft Skills</a>
-    <a href="resume.html" aria-current="page">Resume</a>
-    <a href="interview.html">Interview</a>
+    <a href="index.html">Home</a>
+      <a href="soft-skills.html">Soft Skills</a>
+      <a href="resume.html" aria-current="page">Resume</a>
+      <a href="interview.html">Interview</a>
   </nav>
 
-  <main class="page page-rs">
-
-    <div class="rs-top">
-      <div class="rs-left">
-        <a class="pill" href="resume.html">Build Your Resume</a>
-
-        <div class="block">
-          <h1 class="lead-title">Build a Resume That Gets You Noticed</h1>
-          <p class="lead-text">Your resume is often the first thing an employer sees. Learn how to create a clear and professional resume, even if you have little or no work experience.</p>
-        </div>
-
-        <div class="block block-what">
-          <h2 class="lead-title">What Is a Resume?</h2>
-          <p class="lead-text">A resume is a short document that introduces your education, skills, experience, projects, and achievements to an employer. Its purpose is to show why you could be a good fit for a position.</p>
-        </div>
-      </div>
-
-      <img class="rs-cv" src="img/cv-form.jpg" alt="Sample resume">
-
-      <section class="rs-contain">
-        <h2>What a Resume should contain</h2>
-        <ol>
-          <li><span class="num"><span class="n">1</span><span class="dot">.</span></span><p><b>Contact Information</b><span class="rc-d">Include your full name, professional email address, phone number, and other relevant contact details.</span></p></li>
-          <li><span class="num"><span class="n">2</span><span class="dot">.</span></span><p><b>Career Objective</b><span class="rc-d"><span class="v-dp">Write a short statement describing the type of position you are looking for and what you hope to contribute.</span><span class="v-t">Write a short statement describing the type of position you are looking for.</span></span></p></li>
-          <li><span class="num"><span class="n">3</span><span class="dot">.</span></span><p><b>Education</b><span class="rc-d">Include your school, program or degree, and graduation year or expected graduation date.</span></p></li>
-          <li><span class="num"><span class="n">4</span><span class="dot">.</span></span><p><b>Skills</b><span class="rc-d"><span class="v-dp">List skills that are relevant to the position. Include both technical skills and useful soft skills.</span><span class="v-t">List skills that are relevant to the position. Include both technical and soft skills.</span></span></p></li>
-          <li><span class="num"><span class="n">5</span><span class="dot">.</span></span><p><b>Experience</b><span class="rc-d"><span class="v-dp">Include internships, part-time work, volunteer activities, or other experiences that demonstrate your abilities.</span><span class="v-t">Include internships, part-time work, volunteer activities, or other projects.</span></span></p></li>
-          <li><span class="num"><span class="n">6</span><span class="dot">.</span></span><p><b>Projects</b><span class="rc-d"><span class="v-dp">School and personal projects can show what you are capable of, especially when you have limited work experience.</span><span class="v-t">School and personal projects can show what you are capable of.</span></span></p></li>
-        </ol>
-      </section>
-    </div>
-
-    <section class="rs-bottom">
-      <div class="rs-ok">
-        <div class="note">
-          <b>No Work Experience?</b>
-          <span>No worries, focus on what you<br class="br-d"> already have<span class="v-p">.</span></span>
-        </div>
-        <img src="img/ok-sign.png" alt="">
-      </div>
-
-      <div class="rs-steps">
-      <article class="rs-step">
-        <img src="img/mortarboard.svg" alt="">
-        <h3>Education</h3>
-        <p><span class="v-dp">Show your academic background and relevant subjects.</span><span class="v-t">Show your academic background.</span></p>
-      </article>
-      <article class="rs-step">
-        <img src="img/resume-project.svg" alt="">
-        <h3>Projects</h3>
-        <p><span class="v-dp">Include school or personal projects that demonstrate your skills.</span><span class="v-t">Include school or personal projects.</span></p>
-      </article>
-      <article class="rs-step">
-        <img src="img/extracurricular.svg" alt="">
-        <h3>Activities</h3>
-        <p><span class="v-dp">Mention organizations, events, volunteer work, or leadership experiences.</span><span class="v-t">Volunteer work or leadership roles.</span></p>
-      </article>
-      <article class="rs-step">
-        <img src="img/skills.svg" alt="">
-        <h3>Skills</h3>
-        <p><span class="v-dp">Highlight abilities that are relevant to the position.</span><span class="v-t">Highlight relevant abilities.</span></p>
-      </article>
+  <main class="container page">
+    <section class="page-head no-art">
+      <div class="ph-text">
+        <p class="eyebrow">Build Your Resume</p>
+        <h1>Build a Resume That Gets You Noticed</h1>
+        <p class="lead">Your resume is often the first thing an employer sees. Learn how to create a clear and professional resume, even if you have little or no work experience.</p>
       </div>
     </section>
 
+    <section class="resume-split">
+      <img class="cv" src="img/cv-form.jpg" alt="Sample resume">
+      <div class="resume-info">
+        <div class="what">
+          <h2>What Is a Resume?</h2>
+          <p>A resume is a short document that introduces your education, skills, experience, projects, and achievements to an employer. Its purpose is to show why you could be a good fit for a position.</p>
+        </div>
+        <div class="panel">
+          <h2>What a Resume should contain</h2>
+          <ol class="num-list">
+          <li><span class="num">1</span><div><h3>Contact Information</h3><p>Include your full name, professional email address, phone number, and other relevant contact details.</p></div></li>
+          <li><span class="num">2</span><div><h3>Career Objective</h3><p>Write a short statement describing the type of position you are looking for and what you hope to contribute.</p></div></li>
+          <li><span class="num">3</span><div><h3>Education</h3><p>Include your school, program or degree, and graduation year or expected graduation date.</p></div></li>
+          <li><span class="num">4</span><div><h3>Skills</h3><p>List skills that are relevant to the position. Include both technical skills and useful soft skills.</p></div></li>
+          <li><span class="num">5</span><div><h3>Experience</h3><p>Include internships, part-time work, volunteer activities, or other experiences that demonstrate your abilities.</p></div></li>
+          <li><span class="num">6</span><div><h3>Projects</h3><p>School and personal projects can show what you are capable of, especially when you have limited work experience.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="no-exp">
+      <div class="no-exp-head">
+        <img src="img/ok-sign.png" alt="">
+        <div>
+          <h2>No Work Experience?</h2>
+          <p class="sub">No worries, focus on what you already have.</p>
+        </div>
+      </div>
+      <div class="panel panel-purple">
+        <div class="steps">
+          <article class="step"><img src="img/mortarboard.svg" alt=""><h3>Education</h3><p>Show your academic background and relevant subjects.</p></article>
+          <article class="step"><img src="img/resume-project.svg" alt=""><h3>Projects</h3><p>Include school or personal projects that demonstrate your skills.</p></article>
+          <article class="step"><img src="img/extracurricular.svg" alt=""><h3>Activities</h3><p>Mention organizations, events, volunteer work, or leadership experiences.</p></article>
+          <article class="step"><img src="img/skills.svg" alt=""><h3>Skills</h3><p>Highlight abilities that are relevant to the position.</p></article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer-brand">
-      <strong>FirstStep</strong>
-      Your Guide To Getting Your First job
-    </div>
-    <div class="footer-mid">
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
-      </div>
-      <p class="footer-copy">© 2026 FirstStep</p>
-    </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="soft-skills.html">Skills</a>
-      <a href="resume.html" aria-current="page">Resume</a>
-      <a href="interview.html">Interview</a>
-    </nav>
-  </footer>
-
-  <footer class="footer-m">
-    <div class="fm-row">
-      <div class="fm-brand">
-        <p class="fm-logo">FirstStep</p>
-        <p class="fm-tag">Your Guide to Getting Your First Job</p>
-      </div>
-      <div class="fm-nav">
-        <p class="fm-nav-label">Navigation</p>
-        <nav aria-label="Footer">
-          <a href="soft-skills.html"><span class="v-t">Skills</span><span class="v-p">Soft Skills</span></a>
-          <a href="resume.html">Resume</a>
-          <a href="interview.html">Interview</a>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="f-brand">
+          <a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32"><span>FirstStep</span></a>
+          <p>Your guide to getting your first job.</p>
+        </div>
+        <nav class="f-col" aria-label="Footer">
+          <h2>Navigation</h2>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="soft-skills.html">Soft Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="interview.html">Interview</a></li>
+          </ul>
         </nav>
+        <div class="f-col">
+          <h2>Follow us</h2>
+          <div class="f-social">
+            <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt="" width="36" height="36"></a>
+            <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt="" width="36" height="36"></a>
+          </div>
+        </div>
       </div>
-      <div class="fm-social">
-        <a href="#" aria-label="Facebook"><img src="img/facebook.png" alt=""></a>
-        <a href="#" aria-label="Instagram"><img src="img/instagram.png" alt=""></a>
+      <div class="footer-bottom">
+        <p>© 2026 FirstStep</p>
+        <p>Made for first-time job seekers.</p>
       </div>
     </div>
-    <hr class="fm-line">
-    <p class="fm-copy">© 2026 FirstStep</p>
   </footer>
 
 </body>
